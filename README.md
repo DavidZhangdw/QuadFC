@@ -7,17 +7,6 @@ This repository includes PyTorch code for reproducing the results on benchmark.
 
 The source code and trained models will be released soon.
 
-## Prerequisites
-
-CPU: Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
-
-GPU: NVIDIA GTX1080Ti
-
-- python3.6
-- pytorch == 0.4.1
-- numpy
-- opencv
-
 ### Bibtex
 If you find this code useful, please consider citing:
 
