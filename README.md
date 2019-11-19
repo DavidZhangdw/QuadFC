@@ -1,6 +1,10 @@
 # QuadFC
 **Joint Representation Learning with Deep Quadruplet Network for Visual Tracking**
 
+## Introduction
+
+This repository includes PyTorch code for reproducing the results on benchmark.
+
 ## Prerequisites
 
 CPU: Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
@@ -12,9 +16,8 @@ GPU: NVIDIA GTX1080Ti
 - numpy
 - opencv
 
-## Citing QuadFC
-
-If you find **QuadFC** useful in your research, please consider citing:
+### Bibtex
+If you find this code useful, please consider citing:
 
 ```
 @inproceedings{Zhang_2019_QuadFC,
