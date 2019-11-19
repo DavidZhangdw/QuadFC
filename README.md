@@ -5,7 +5,7 @@
 
 This repository includes PyTorch code for reproducing the results on benchmark.
 
-The source code and trained models will be released soon.
+The source code and trained models will be released soon to facilitate further reseaches.
 
 ### Bibtex
 If you find this code useful, please consider citing:
