@@ -1,47 +1,36 @@
 # QuadFC
-Joint Representation Learning with Deep Quadruplet Network for Visual Tracking
+**Joint Representation Learning with Deep Quadruplet Network for Visual Tracking**
 
 This repository includes PyTorch code for reproducing the results on benchmark.
 
-Dawei Zhang<sup>\*</sup>, Zhonglong Zheng<sup>\*</sup>
-
-## Introduction
-
-**SiamRPN** formulates the task of visual tracking as a task of localization and identification simultaneously, initially described in an [CVPR2018 spotlight paper](http://openaccess.thecvf.com/content_cvpr_2018/papers/Li_High_Performance_Visual_CVPR_2018_paper.pdf). (Slides at [CVPR 2018 Spotlight](https://drive.google.com/open?id=1OGIOUqANvYfZjRoQfpiDqhPQtOvPCpdq))
-
-**DaSiamRPN** improves the performances of SiamRPN by (1) introducing an effective sampling strategy to control the imbalanced sample distribution, (2) designing a novel distractor-aware module to perform incremental learning, (3) making a long-term tracking extension. [ECCV2018](https://arxiv.org/pdf/1808.06048.pdf). (Slides at [VOT-18 Real-time challenge winners talk](https://drive.google.com/open?id=1dsEI2uYHDfELK0CW2xgv7R4QdCs6lwfr))
-
-<div align="center">
-  <img src="votresult.png" width="700px" />
-</div>
+Dawei Zhang, Zhonglong Zheng
 
 ## Prerequisites
 
-CPU: Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz
-GPU: NVIDIA GTX1060
+CPU: Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
+GPU: NVIDIA GTX1080Ti
 
-- python2.7
-- pytorch == 0.3.1
+- python3.6
+- pytorch == 0.4.1
 - numpy
 - opencv
 
 
-## Pretrained model for SiamRPN
+## Pretrained model for QuadFC
 
-In our tracker, we use an AlexNet variant as our backbone, which is end-to-end trained for visual tracking.
-The pretrained model can be downloaded from google drive: [SiamRPNBIG.model](https://drive.google.com/file/d/1-vNVZxfbIplXHrqMHiJJYWXYWsOIvGsf/view?usp=sharing).
-Then, you should copy the pretrained model file `SiamRPNBIG.model` to the subfolder './code', so that the tracker can find and load the pretrained_model.
+In our tracker, we use an CIRes22W as our backbone, which is end-to-end trained for visual tracking.
+The pretrained model can be downloaded from baidu drive: [QuadFC.model](https://pan.baidu.com/s/1dnQVRyAfxu6Ua6FJrcGkrw).
+Then, you should copy the pretrained model file `QuadFC.model` to the subfolder './code', so that the tracker can find and load the pretrained_model.
 
 
 ## Detailed steps to install the prerequisites
 
-- install pytorch, numpy, opencv following the instructions in the `run_install.sh`. Please do **not** use conda to install.
-- you can alternatively modify `/PATH/TO/CODE/FOLDER/` in `tracker_SiamRPN.m` 
-  If the tracker is ready, you will see the tracking results. (EAO: 0.3827)
+- install pytorch, numpy, opencv following the instructions in the `run_install.sh`. Please use conda to install.
+  If the tracker is ready, you will see the tracking results. (EAO: 0.358)
 
 
 ## Results
-All results can be downloaded from [Google Drive](https://drive.google.com/drive/folders/1HJOvl_irX3KFbtfj88_FVLtukMI1GTCR?usp=sharing).
+All results can be downloaded from [Baidu Drive](https://pan.baidu.com/s/1dnQVRyAfxu6Ua6FJrcGkrw).
 
 | | <sub>VOT2015</br>A / R / EAO</sub> | <sub>VOT2016</br>A / R / EAO</sub> | <sub>VOT2017 & VOT2018</br>A / R / EAO</sub> | <sub>OTB2015</br>OP / DP</sub> | <sub>UAV123</br>AUC / DP</sub> | <sub>UAV20L</br>AUC / DP</sub> |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -80,22 +69,15 @@ python eval_otb.py OTB2015 "Siam*" 0 1
 Licensed under an MIT license.
 
 
-## Citing DaSiamRPN
+## Citing QuadFC
 
-If you find **DaSiamRPN** and **SiamRPN** useful in your research, please consider citing:
+If you find **QuadFC** useful in your research, please consider citing:
 
 ```
 @inproceedings{Zhu_2018_ECCV,
   title={Distractor-aware Siamese Networks for Visual Object Tracking},
   author={Zhu, Zheng and Wang, Qiang and Bo, Li and Wu, Wei and Yan, Junjie and Hu, Weiming},
   booktitle={European Conference on Computer Vision},
-  year={2018}
-}
-
-@InProceedings{Li_2018_CVPR,
-  title = {High Performance Visual Tracking With Siamese Region Proposal Network},
-  author = {Li, Bo and Yan, Junjie and Wu, Wei and Zhu, Zheng and Hu, Xiaolin},
-  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-  year = {2018}
+  year={2019}
 }
 ```
