@@ -12,14 +12,6 @@ GPU: NVIDIA GTX1080Ti
 - numpy
 - opencv
 
-
-## Pretrained model for QuadFC
-
-In our tracker, we use an CIRes22W as our backbone, which is end-to-end trained for visual tracking.
-The pretrained model can be downloaded from baidu drive: [QuadFC.model](https://pan.baidu.com/s/1dnQVRyAfxu6Ua6FJrcGkrw).
-Then, you should copy the pretrained model file `QuadFC.model` to the subfolder './code', so that the tracker can find and load the pretrained_model.
-
-
 ## Citing QuadFC
 
 If you find **QuadFC** useful in your research, please consider citing:
