@@ -1,10 +1,6 @@
 # QuadFC
 **Joint Representation Learning with Deep Quadruplet Network for Visual Tracking**
 
-This repository includes PyTorch code for reproducing the results on benchmark.
-
-Dawei Zhang, Zhonglong Zheng
-
 ## Prerequisites
 
 CPU: Intel(R) Xeon(R) CPU E5-2683 v4 @ 2.10GHz
