@@ -1,5 +1,5 @@
 # QuadFC
-**Joint Representation Learning with Deep Quadruplet Network for Visual Tracking**
+**Joint Representation Learning with Deep Quadruplet Network for Real-Time Visual Tracking**
 
 ## Introduction
 
@@ -12,7 +12,7 @@ If you find this code useful, please consider citing:
 
 ```
 @inproceedings{Zhang_2019_QuadFC,
-  title={Joint Representation Learning with Deep Quadruplet Network for Visual Tracking},
+  title={Joint Representation Learning with Deep Quadruplet Network for Real-Time Visual Tracking},
   author={Dawei Zhang and Zhonglong Zheng},
   booktitle={International Joint Conference on Neural Networks(IJCNN)},
   year={2020}
