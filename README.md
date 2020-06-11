@@ -20,7 +20,7 @@ If you find this code useful, please consider citing:
 ```
 
 ### Results
-- [OTB2013](https://pan.baidu.com/s/1OO3Dejx8SiQjMTq9P0B0-A)    (2t5v)
-- [OTB2015](https://pan.baidu.com/s/1Mnvgp56XYGD3RJCzUF7iQg)    (2fwj)
+- [OTB2013](https://pan.baidu.com/s/1OO3Dejx8SiQjMTq9P0B0-A)    [ 2t5v ]
+- [OTB2015](https://pan.baidu.com/s/1Mnvgp56XYGD3RJCzUF7iQg)    [ 2fwj ]
 - [VOT2016](https://drive.google.com/open?id=1dAyYSpAJhMd6mFE2uRPblCkci)
 - [VOT2017](https://drive.google.com/open?id=1Heg_Pwv021pl47ekHM43KjF4I)
