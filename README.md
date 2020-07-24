@@ -4,9 +4,10 @@
 ## Introduction
 Recently, trackers based on Siamese networks have attracted spread attention in the field of visual tracking because of a balance between accuracy and speed. However, features extracted in most networks cannot accurately distinguish a tracked target from the background with semantic information in some challenging scenes. 
 
-Learning powerful representation via effective offline training strategy is critical for constructing high performance Siamese trackers. 
-
-In this work, we develop a Fully- Convolutional deep Quadruple Network (QuadFC) to learn more expressive representation via a novel multi-task loss function composed of a differential pairwise loss for tracking and a constructed triplet loss for metric learning, which can be trained offline in an end-to-end manner. Extensive experiments on several tracking benchmarks, show that the proposed tracker achieves the state-of-the-art tracking performance while running at 68 FPS.
+Therefore, learning powerful representation via effective offline training strategy is critical for constructing high performance Siamese trackers. In this work, the main
+contributions of this work are suammrized as:
+1) we developed a Fully- Convolutional deep Quadruple Network (QuadFC) to learn more expressive representation by mining inherent connections among samples. 
+2) We proposed a multi-task loss function composed of a differential pairwise loss as well as the constructed triplet loss for joint representation learning.
 
 ## Exprimental Results
 This repository includes PyTorch code for reproducing the results on benchmark.
