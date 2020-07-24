@@ -8,6 +8,7 @@ Therefore, learning powerful representation via effective offline training strat
 contributions of this work are suammrized as:
 1) we developed a Fully- Convolutional deep Quadruple Network (QuadFC) to learn more expressive representation by mining inherent connections among samples. 
 2) We proposed a multi-task loss function composed of a differential pairwise loss as well as the constructed triplet loss for joint representation learning.
+3) Comprehensive experiments, on several representative tracking benchmarks, show that QuadFC achieves state-of-the-art performance while tracking with a far beyond real-time speed.
 
 ## Exprimental Results
 This repository includes PyTorch code for reproducing the results on benchmark.
