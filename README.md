@@ -18,10 +18,10 @@ This repository includes PyTorch code for reproducing the results on benchmark.
 | CIResIncep22-FC| 0.662 | 0.642 | 0.310 | 0.295 | 0.236 |
 | CIResNext23-FC | 0.659 | 0.633 | 0.297 | 0.278 | 0.229 |
 | QuadFC         | **0.686** | **0.666** | **0.362** | **0.343** | **0.275** |
-| Raw Results | :paperclip: [OTB2013](https://pan.baidu.com/s/1OO3Dejx8SiQjMTq9P0B0-A) | :paperclip: [OTB2015](https://pan.baidu.com/s/1Mnvgp56XYGD3RJCzUF7iQg)  | :paperclip: [VOT15](https://pan.baidu.com/s/1SGLcMWgrBuBT_kaXMdQBug)  | :paperclip: [VOT16](https://drive.google.com/open?id=1dAyYSpAJhMd6mFE2uRPblCkci) |  :paperclip: [VOT17](https://drive.google.com/open?id=1Heg_Pwv021pl47ekHM43KjF4I) |
+| Raw Results | :paperclip: [OTB2013](https://pan.baidu.com/s/1IyTuzeMioo1njzjHiNHDcQ) | :paperclip: [OTB2015](https://pan.baidu.com/s/1TDoa0R3WEdzGnKPPuIqYCg)  | :paperclip: [VOT15](https://pan.baidu.com/s/1SGLcMWgrBuBT_kaXMdQBug)  | :paperclip: [VOT16](https://pan.baidu.com/s/11-5_PVhRzu-3CAinSA1PTQ) |  :paperclip: [VOT17](https://pan.baidu.com/s/1PIgI5c8vmEL39frywsiMFA) |
 
 - The trained models are released to facilitate further reseaches.
-- Download pretrained [model](https://pan.baidu.com/s/1zYBmJ5tkEWVm0avv6ZaFbA) (password:bvde).
+- Download pretrained [model](https://pan.baidu.com/s/1zYBmJ5tkEWVm0avv6ZaFbA) (password: bvde).
 
 #### Environment 
 The proposed architecture is implemented in Python with PyTorch 0.4.1 and all the experimental results are obtained on a workstation with Intel(R) Xeon(R) CPU E5-2683 v4
