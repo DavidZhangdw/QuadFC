@@ -2,7 +2,9 @@
 **Joint Representation Learning with Deep Quadruplet Network for Real-Time Visual Tracking**
 
 ## Introduction
-Recently, trackers based on Siamese networks have attracted spread attention in the field of visual tracking because of a balance between accuracy and speed. Learning powerful representation via effective offline training strategy is critical for constructing high performance Siamese trackers. However, features extracted in most networks cannot accurately distinguish a tracked target from the background with semantic information in some challenging scenes. 
+Recently, trackers based on Siamese networks have attracted spread attention in the field of visual tracking because of a balance between accuracy and speed. However, features extracted in most networks cannot accurately distinguish a tracked target from the background with semantic information in some challenging scenes. 
+
+Learning powerful representation via effective offline training strategy is critical for constructing high performance Siamese trackers. 
 
 In this work, we develop a Fully- Convolutional deep Quadruple Network (QuadFC) to learn more expressive representation via a novel multi-task loss function composed of a differential pairwise loss for tracking and a constructed triplet loss for metric learning, which can be trained offline in an end-to-end manner. Extensive experiments on several tracking benchmarks, show that the proposed tracker achieves the state-of-the-art tracking performance while running at 68 FPS.
 
@@ -25,7 +27,7 @@ This repository includes PyTorch code for reproducing the results on benchmark.
 
 #### Environment 
 The proposed architecture is implemented in Python with PyTorch 0.4.1 and all the experimental results are obtained on a workstation with Intel(R) Xeon(R) CPU E5-2683 v4
-@2.10GHz and a NVIDIA GeForce GTX 1080 Ti GPU
+@2.10GHz and a NVIDIA GeForce GTX 1080 Ti GPU.
 
 ### Citation
 If you find this code useful, please consider citing:
