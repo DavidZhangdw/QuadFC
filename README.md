@@ -21,7 +21,7 @@ This repository includes PyTorch code for reproducing the results on benchmark.
 | Raw Results | :paperclip: [OTB2013](https://pan.baidu.com/s/1OO3Dejx8SiQjMTq9P0B0-A) | :paperclip: [OTB2015](https://pan.baidu.com/s/1Mnvgp56XYGD3RJCzUF7iQg)  | :paperclip: [VOT15](https://pan.baidu.com/s/1SGLcMWgrBuBT_kaXMdQBug)  | :paperclip: [VOT16](https://drive.google.com/open?id=1dAyYSpAJhMd6mFE2uRPblCkci) |  :paperclip: [VOT17](https://drive.google.com/open?id=1Heg_Pwv021pl47ekHM43KjF4I) |
 
 - The trained models are released to facilitate further reseaches.
-- Download pretrained [model](https://drive.google.com/file/d/1xvexXCUdshajkfkskLLtE/view?usp=sharing).
+- Download pretrained [model](https://pan.baidu.com/s/1zYBmJ5tkEWVm0avv6ZaFbA) (password:bvde).
 
 #### Environment 
 The proposed architecture is implemented in Python with PyTorch 0.4.1 and all the experimental results are obtained on a workstation with Intel(R) Xeon(R) CPU E5-2683 v4
