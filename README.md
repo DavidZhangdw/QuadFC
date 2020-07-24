@@ -2,13 +2,32 @@
 **Joint Representation Learning with Deep Quadruplet Network for Real-Time Visual Tracking**
 
 ## Introduction
-. However, . 
+Recently, trackers based on Siamese networks have attracted spread attention in the field of visual tracking because of a balance between accuracy and speed. Learning powerful representation via effective offline training strategy is critical for constructing high performance Siamese trackers. However, features extracted in most networks cannot accurately distinguish a tracked target from the background with semantic information in some challenging scenes. 
 
+In this work, we develop a Fully- Convolutional deep Quadruple Network (QuadFC) to learn more expressive representation via a novel multi-task loss function composed of a differential pairwise loss for tracking and a constructed triplet loss for metric learning, which can be trained offline in an end-to-end manner. Extensive experiments on several tracking benchmarks, show that the proposed tracker achieves the state-of-the-art tracking performance while running at 68 FPS.
+
+## Exprimental Results
 This repository includes PyTorch code for reproducing the results on benchmark.
 
-The source code and trained models will be released to facilitate further reseaches soon.
+#### Main results on VOT and OTB Benchmarks
+| Models  | OTB13 | OTB15 | VOT15 | VOT16 | VOT17|
+| :------ | :------: | :------: | :------: | :------: | :------: | 
+| Alex-FC      | 0.608 | 0.579 | 0.289 | 0.235 | 0.188 |
+| Alex-RPN     | -     | 0.637 | 0.349 | 0.344 | 0.244 |
+| CIResNet22-FC  | 0.663 | 0.644 | 0.318 | 0.303 | 0.234 |
+| CIResIncep22-FC| 0.662 | 0.642 | 0.310 | 0.295 | 0.236 |
+| CIResNext23-FC | 0.659 | 0.633 | 0.297 | 0.278 | 0.229 |
+| QuadFC         | 0.676 | 0.666 | 0.362 | 0.343 | 0.275 |
+| Raw Results | :paperclip: [OTB2013](https://pan.baidu.com/s/1OO3Dejx8SiQjMTq9P0B0-A) | :paperclip: [OTB2015](https://pan.baidu.com/s/1Mnvgp56XYGD3RJCzUF7iQg)  | :paperclip: [VOT15](https://pan.baidu.com/s/1SGLcMWgrBuBT_kaXMdQBug)  | :paperclip: [VOT16](https://drive.google.com/open?id=1dAyYSpAJhMd6mFE2uRPblCkci) |  :paperclip: [VOT17](https://drive.google.com/open?id=1Heg_Pwv021pl47ekHM43KjF4I) |
 
-### Bibtex
+- The trained models are released to facilitate further reseaches.
+- Download pretrained [model](https://drive.google.com/file/d/1xvexXCUdshajkfkskLLtE/view?usp=sharing).
+
+#### Environment 
+The proposed architecture is implemented in Python with PyTorch 0.4.1 and all the experimental results are obtained on a workstation with Intel(R) Xeon(R) CPU E5-2683 v4
+@2.10GHz and a NVIDIA GeForce GTX 1080 Ti GPU
+
+### Citation
 If you find this code useful, please consider citing:
 
 ```
@@ -19,95 +38,3 @@ If you find this code useful, please consider citing:
   year={2020}
 }
 ```
-
-
-## Introduction
-
-  
-Our proposals improve the performances of fully convolutional siamese trackers by,
-1) introducing CIR and CIR-D units to unveil the power of deeper and wider networks like [ResNet](https://arxiv.org/abs/1512.03385) and [Inceptipon](https://arxiv.org/abs/1409.4842); 
-2) designing backbone networks according to the analysis on internal network factors (e.g. receptive field, stride, output feature size), which affect tracking performances.
-
-<div align="center">
-  <img src="demo/vis.gif" width="800px" />
-  <!-- <p>Example SiamFC, SiamRPN and SiamMask outputs.</p> -->
-</div>
-
-<!-- :tada::tada: **Highlight !!**
-Siamese tracker is severely sensitive to hyper-parameter, which is a common sense in tracking field. Although significant progresses have been made in some works, the result is hard to reproduce. In this case, we provide a [parameter tuning toolkit]() to make our model being reproduced easily. We hope our efforts and supplies will be helpful to your work. -->
-
-## Main Results
-#### Main results on VOT and OTB
-| Models  | OTB13 | OTB15 | VOT15 | VOT16 | VOT17|
-| :------ | :------: | :------: | :------: | :------: | :------: | 
-| Alex-FC      | 0.608 | 0.579 | 0.289 | 0.235 | 0.188 |
-| Alex-RPN     | -     | 0.637 | 0.349 | 0.344 | 0.244 |
-| CIResNet22-FC  | 0.663 | 0.644 | 0.318 | 0.303 | 0.234 |
-| CIResIncep22-FC| 0.662 | 0.642 | 0.310 | 0.295 | 0.236 |
-| CIResNext23-FC | 0.659 | 0.633 | 0.297 | 0.278 | 0.229 |
-| CIResNet22-RPN| 0.674 | 0.666 | 0.381 | 0.376 | 0.294 |
-
-#### Main results trained with GOT-10k (SiamFC)
-| Models  | OTB13 | OTB15 | VOT15 | VOT16 | VOT17|
-| :------ | :------: | :------: | :------: | :------: | :------: |
-| Alex-FC        |-      | -     | -     | -     |0.188     | 
-| CIResNet22-FC  | 0.664 | 0.654 | 0.361 | 0.335 | 0.266| 
-| CIResNet22W-FC | **0.689** | **0.674** | **0.368** | **0.352** | **0.269** |
-| CIResIncep22-FC| 0.673 | 0.650 | 0.332 | 0.305 | 0.251|
-| CIResNext22-FC | 0.668 | 0.651 | 0.336 | 0.304 | 0.246|
-| Raw Results | :paperclip: [OTB2013](https://pan.baidu.com/s/1HgkjUmnYl7qagIkz9u4r_A) | :paperclip: [OTB2015](https://pan.baidu.com/s/1ZgL4DQL57cuWfqxLFmUR1A)  | :paperclip: [VOT15](https://pan.baidu.com/s/1SGLcMWgrBuBT_kaXMdQBug)  | :paperclip: [VOT16](https://pan.baidu.com/s/12jmWEwo4tjbM4SHSKgULNw) |  :paperclip: [VOT17](https://pan.baidu.com/s/1UWQRE2VrJrONpj293el4Pw) |
-
-- Some reproduced results listed above are slightly better than the ones in the paper.
-- Recently we found that training on GOT10K dataset can achieve better performance for SiamFC. So we provide the results being trained on GOT10K.
-<!-- - Download pretrained on GOT10K [model](https://drive.google.com/file/d/1xvexXCUCB0gCYFnShj3NQ4Xuk52lLLtE/view?usp=sharing).  -->
-
-
-#### New added results
-| Benchmark | VOT18| VOT19 | GOT10K | VISDRONE19 | LaSOT | 
-|:------: |:------: | :------: |  :------: | :------: | :------: | 
-| Performance   | **0.270** | **0.242** | **0.416**  | **0.383** |**0.384**|
-| Raw Results | :paperclip: [VOT18](https://pan.baidu.com/s/1hKg-n4PTPL_VCEdxCrXMAA) | :paperclip: [VOT19](https://pan.baidu.com/s/1mwPrMJhi79_TO40RzTAwvQ) | :paperclip: [GOT10K](https://pan.baidu.com/s/10INTbmtfL-EdfkAmDQgcKw) |:paperclip: [VISDRONE](https://pan.baidu.com/s/17MLGaHEFEFG3yWUmLqJ7ig) | :paperclip: [LaSOT](https://drive.google.com/file/d/1Xw7KRrhQ_fUhmIADOb6et2K5i6Xsaz91/view?usp=sharing) |
-
-- We add resutls of SiamFCRes22W on recent benchmarks.
-- Download pretrained on GOT10K [model](https://drive.google.com/file/d/1sfmy1nImNw_mstGLEOgpmJydQvSuaobI/view?usp=sharing) and [hyper-parameters](https://drive.google.com/file/d/1UAswI6Dd-TkbDa8oqRgSPPLUgiM9p--L/view?usp=sharing).
-
-
-#### Environment
-The code is developed with Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz GPU: NVIDIA .GTX1080
-
-
-
-## Quick Start
-### Test
-See details in [test.md](lib/tutorials/test.md)
-
-### Train
-See details in [train.md](lib/tutorials/train.md)
-
-:cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud::cloud:
-
-## Citation
-If any part of our paper and code is helpful to your work, please generously cite with:
-
-```
-@InProceedings{SiamDW_2019_CVPR,
-author = {Zhang, Zhipeng and Peng, Houwen},
-title = {Deeper and Wider Siamese Networks for Real-Time Visual Tracking},
-booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
-month = {June},
-year = {2019}
-} 
-```
-
-## License
-Licensed under an MIT license.
-
-
-
-
-
-### Results
-- [OTB2013](https://pan.baidu.com/s/1OO3Dejx8SiQjMTq9P0B0-A)  code: 2t5v
-- [OTB2015](https://pan.baidu.com/s/1Mnvgp56XYGD3RJCzUF7iQg)  code: 2fwj
-- [VOT2016](https://drive.google.com/open?id=1dAyYSpAJhMd6mFE2uRPblCkci)
-- [VOT2017](https://drive.google.com/open?id=1Heg_Pwv021pl47ekHM43KjF4I)
