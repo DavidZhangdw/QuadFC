@@ -10,7 +10,7 @@ contributions of this work are suammrized as:
 2) We proposed a multi-task loss function composed of a differential pairwise loss as well as the constructed triplet loss for joint representation learning.
 3) Comprehensive experiments, on several representative tracking benchmarks, show that QuadFC achieves state-of-the-art performance while tracking with a far beyond real-time speed.
 
-![](https://github.com/DavidZhangdw/QuadFC/img/QuadFC.png)
+![](https://github.com/DavidZhangdw/QuadFC/imgs/QuadFC.png)
 
 ## Exprimental Results
 This repository includes PyTorch code for reproducing the results on benchmark.
