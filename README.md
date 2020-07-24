@@ -17,7 +17,7 @@ This repository includes PyTorch code for reproducing the results on benchmark.
 | CIResNet22-FC  | 0.663 | 0.644 | 0.318 | 0.303 | 0.234 |
 | CIResIncep22-FC| 0.662 | 0.642 | 0.310 | 0.295 | 0.236 |
 | CIResNext23-FC | 0.659 | 0.633 | 0.297 | 0.278 | 0.229 |
-| QuadFC         | **0.676** | **0.666** | **0.362** | **0.343** | **0.275** |
+| QuadFC         | **0.686** | **0.666** | **0.362** | **0.343** | **0.275** |
 | Raw Results | :paperclip: [OTB2013](https://pan.baidu.com/s/1OO3Dejx8SiQjMTq9P0B0-A) | :paperclip: [OTB2015](https://pan.baidu.com/s/1Mnvgp56XYGD3RJCzUF7iQg)  | :paperclip: [VOT15](https://pan.baidu.com/s/1SGLcMWgrBuBT_kaXMdQBug)  | :paperclip: [VOT16](https://drive.google.com/open?id=1dAyYSpAJhMd6mFE2uRPblCkci) |  :paperclip: [VOT17](https://drive.google.com/open?id=1Heg_Pwv021pl47ekHM43KjF4I) |
 
 - The trained models are released to facilitate further reseaches.
